@@ -1,6 +1,13 @@
 .header-navbar {
     padding: 2rem;
     background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    margin: 0 5rem;
+    z-index: 500;
     &__left {
         img {
             width: 60%;
@@ -15,22 +22,24 @@
                 margin-left: 2rem;
                 a {
                     color: white !important;
+                    font-size: $font-size - 0.3rem;
+                    font-weight: $font-weight-1;
+
+                    &:hover {
+                        color: $color-pink !important;
+                    }
                 }
             }
         }
         &--button {
             button {
-                padding: 1.3rem 3.5rem;
-                border-radius: 6rem;
-                background: transparent;
+                @include btnClick(transparent);
+                padding: 1.7rem 4rem;
                 border: 2px solid gray;
-                font-size: 1.5rem;
-                text-transform: uppercase;
-                color: white;
-                transition: all 0.5s;
                 &:hover {
-                    color: white;
-                    background-color: red;
+                    color: $color-white;
+                    background-color: $color-pink;
+                    border: 2px solid $color-pink;
                 }
             }
         }

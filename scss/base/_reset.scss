@@ -9,11 +9,11 @@ body {
     font-family: "Noto Sans JP", sans-serif;
 }
 html {
-    font-size: 87.5%;
+    font-size: 62.5%;
     @include respond(tab-land) {
-        font-size: 75%;
+        font-size: 56.25%;
     }
-    @include respond(phone) {
-        font-size: 62.5%;
+    @include respond(tab-port) {
+        font-size: 50%;
     }
 }

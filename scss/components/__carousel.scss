@@ -4,7 +4,38 @@
         background-size: cover;
         background-position: center;
         backface-visibility: hidden;
-        height: 800px;
+        padding: 33rem 0;
+        position: relative;
+        top: 0;
+        &--text {
+            padding-top: 10rem;
+            text-align: center;
+            color: $color-white;
+            padding-left: 0;
+            padding-right: 0;
+            h1 {
+                font-size: $font-size-2;
+                font-weight: $font-weight-4;
+                margin-bottom: 1.5rem;
+                line-height: 12rem;
+            }
+            p {
+                font-size: $font-size + 0.5rem;
+                width: 80%;
+                margin: 0 auto;
+                line-height: 4rem;
+                letter-spacing: 2px;
+            }
+            .btn {
+                @include btnClick($color-pink);
+                padding: 1.8rem 4.5rem;
+                margin-top: 5rem;
+                &:hover {
+                    background: transparent;
+                    border: 2px solid $color-pink;
+                }
+            }
+        }
         &--1 {
             background-image: url(../../img/bg-image-23.jpg);
         }
@@ -16,6 +47,20 @@
         }
         &--4 {
             background-image: url(../../img/bg-image-20.jpg);
+        }
+    }
+}
+.owl-carousel {
+    position: relative;
+    .owl-dots {
+        position: absolute;
+        bottom: 6rem;
+        left: 50%;
+        transform: translateX(-50%);
+        .owl-dot.active span,
+        .owl-theme .owl-dots .owl-dot:hover span {
+            background: transparent;
+            border: 2px solid $color-pink;
         }
     }
 }

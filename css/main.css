@@ -11,24 +11,43 @@ body {
 }
 
 html {
-  font-size: 87.5%;
+  font-size: 62.5%;
 }
 
 @media (max-width: 1200px) {
   html {
-    font-size: 75%;
+    font-size: 56.25%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   html {
-    font-size: 62.5%;
+    font-size: 50%;
   }
+}
+
+.heading-title {
+  font-size: 5rem;
+}
+
+.hedading-primary {
+  font-size: 2rem;
+}
+
+.heading-inner {
+  font-size: 3rem;
 }
 
 .header-navbar {
   padding: 2rem;
   background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  margin: 0 5rem;
+  z-index: 500;
 }
 
 .header-navbar__left img {
@@ -47,22 +66,29 @@ html {
 
 .header-navbar__right--ul li a {
   color: white !important;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.header-navbar__right--ul li a:hover {
+  color: #fd4766 !important;
 }
 
 .header-navbar__right--button button {
-  padding: 1.3rem 3.5rem;
-  border-radius: 6rem;
   background: transparent;
-  border: 2px solid gray;
-  font-size: 1.5rem;
+  color: #ffffff;
+  border-radius: 6rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  color: white;
   transition: all 0.5s;
+  padding: 1.7rem 4rem;
+  border: 2px solid gray;
 }
 
 .header-navbar__right--button button:hover {
-  color: white;
-  background-color: red;
+  color: #ffffff;
+  background-color: #fd4766;
+  border: 2px solid #fd4766;
 }
 
 .carousel__items {
@@ -70,7 +96,48 @@ html {
   background-size: cover;
   background-position: center;
   backface-visibility: hidden;
-  height: 800px;
+  padding: 33rem 0;
+  position: relative;
+  top: 0;
+}
+
+.carousel__items--text {
+  padding-top: 10rem;
+  text-align: center;
+  color: #ffffff;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carousel__items--text h1 {
+  font-size: 10rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 12rem;
+}
+
+.carousel__items--text p {
+  font-size: 2.5rem;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 4rem;
+  letter-spacing: 2px;
+}
+
+.carousel__items--text .btn {
+  background: #fd4766;
+  color: #ffffff;
+  border-radius: 6rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  padding: 1.8rem 4.5rem;
+  margin-top: 5rem;
+}
+
+.carousel__items--text .btn:hover {
+  background: transparent;
+  border: 2px solid #fd4766;
 }
 
 .carousel__items--1 {
@@ -87,5 +154,22 @@ html {
 
 .carousel__items--4 {
   background-image: url(../../img/bg-image-20.jpg);
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.owl-carousel .owl-dots .owl-dot.active span,
+.owl-carousel .owl-dots .owl-theme .owl-dots .owl-dot:hover span {
+  background: transparent;
+  border: 2px solid #fd4766;
 }
 /*# sourceMappingURL=main.css.map */
