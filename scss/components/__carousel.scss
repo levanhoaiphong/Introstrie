@@ -1,0 +1,21 @@
+.carousel {
+    &__items {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        backface-visibility: hidden;
+        height: 800px;
+        &--1 {
+            background-image: url(../../img/bg-image-23.jpg);
+        }
+        &--2 {
+            background-image: url(../../img/bg-image-22.jpg);
+        }
+        &--3 {
+            background-image: url(../../img/bg-image-24.jpg);
+        }
+        &--4 {
+            background-image: url(../../img/bg-image-20.jpg);
+        }
+    }
+}

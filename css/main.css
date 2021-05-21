@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+html {
+  font-size: 87.5%;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+.header-navbar {
+  padding: 2rem;
+  background: transparent;
+}
+
+.header-navbar__left img {
+  width: 60%;
+}
+
+.header-navbar__right {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.header-navbar__right--ul li {
+  margin-left: 2rem;
+}
+
+.header-navbar__right--ul li a {
+  color: white !important;
+}
+
+.header-navbar__right--button button {
+  padding: 1.3rem 3.5rem;
+  border-radius: 6rem;
+  background: transparent;
+  border: 2px solid gray;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.5s;
+}
+
+.header-navbar__right--button button:hover {
+  color: white;
+  background-color: red;
+}
+
+.carousel__items {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden;
+  height: 800px;
+}
+
+.carousel__items--1 {
+  background-image: url(../../img/bg-image-23.jpg);
+}
+
+.carousel__items--2 {
+  background-image: url(../../img/bg-image-22.jpg);
+}
+
+.carousel__items--3 {
+  background-image: url(../../img/bg-image-24.jpg);
+}
+
+.carousel__items--4 {
+  background-image: url(../../img/bg-image-20.jpg);
+}
+/*# sourceMappingURL=main.css.map */
